@@ -35,7 +35,7 @@ showCollection.apply({}, collection);
 //function to search the collection by artist name
 function findByArtist(artist){
     let results = [];
-    for (let object in collection){
+    for (let object of collection){
         if (object.albumArtist == artist){
             results.push(object);
         }
